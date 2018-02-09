@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(retrofit2.Call<QuestionList> call, Response<QuestionList> response) {
                     Log.d(TAG,"Total number of fetches from url:"+response.body().getQuestionList());
+                    //Data not getting from api
                     Toast.makeText(MainActivity.this, (CharSequence) response.body(), Toast.LENGTH_SHORT).show();
                 }
 
